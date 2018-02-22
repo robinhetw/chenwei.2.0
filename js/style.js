@@ -265,7 +265,7 @@ $('#myModal').on('shown.bs.modal', function () {
   })
 
   /*modal* */
-
+/*
   function setModalMaxHeight(element) {
     this.$element     = $(element);  
     this.$content     = this.$element.find('.modal-content');
@@ -297,7 +297,7 @@ $('#myModal').on('shown.bs.modal', function () {
       setModalMaxHeight($('.modal.in'));
     }
   });
-
+*/
 
 /* modal fix */
 
