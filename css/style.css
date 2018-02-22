@@ -245,7 +245,9 @@ section{
 }
 
 body.modal-open { position: fixed; }
- 
+ @media (max-width: @screen-xs-min) {
+  .modal-xs { width: @modal-sm; }
+}
 
 
 /* image hover */
