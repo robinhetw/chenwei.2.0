@@ -244,6 +244,7 @@ section{
      
 }
 
+body.modal-open { position: fixed; }
  
 
 
