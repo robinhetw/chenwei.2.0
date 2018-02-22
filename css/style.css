@@ -243,10 +243,17 @@ section{
       height: 30%;
      
 }
+@media (min-width: $screen-sm-min) { // this is the 768px breakpoint
+    .modal-dialog {
+        max-width: 600px;
+        width: auto;
+    }
+}
 
-body.modal-open { position: fixed; }
- @media (max-width: @screen-xs-min) {
-  .modal-xs { width: @modal-sm; }
+@media (min-width: $screen-md-min) { // this is the 992px breakpoint
+    .modal-dialog { 
+        max-width: 800px;
+    }
 }
 
 
