@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="Shortcut Icon" type="image/x-icon" href="css/img/favicon.ico" />
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
-    <!--<link href="http://fonts.googleapis.com/css?family=Playfair+Display:900|Open+Sans:800,600,300,400" rel="stylesheet" type="text/css">
-    -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display:900|Open+Sans:800,600,300,400" rel="stylesheet" type="text/css">
 
-    <!-- <script src="js/jquery.waypoints.min.js"></script>-->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
 
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+   
+   <!-- <script src="js/jquery-3.3.1.slim.min.js"></script>-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
 
 
     <link rel="stylesheet" href="css/ionicons.min.css">
@@ -86,7 +86,7 @@
             <h2>About Chen Wei</h2>
             <div class="row showcase-me">
                 <div class="col-lg-6">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/xWFgwXPqUzk?rel=0" frameborder="0" allowfullscreen></iframe>
+                    
                 </div>
                 <div class="col-lg-6">
                     <h3>I am outgoing and always have a smile on my face.</h3>
@@ -261,7 +261,7 @@
                     <img class="img-circle" src="img/maxchen.jpg" alt="Eric Mu " width="90" height="90">
                     <h3>Max Chen</h3>
                     <p class="lead">Assistant Professor of Information Management Department of MCU</p>
-                    <p>My first met Chen Wei when he took my Information Architecture & Web Design course at MCU. He showed
+                    <p>I first met Chen Wei when he took my Information Architecture & Web Design course at MCU. He showed
                         great aspiration in and out of class, was eager to learn, and dared to follow his dream. Chen Wei
                         is the kind of person I’d love to work with professionally.</p>
 
@@ -537,6 +537,22 @@
                     </div>
                 </div>
                 <!--project-15-->
+                <!--project-16-->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 filter other">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/video-small.jpg" alt="other">
+                        <div class="overlay">
+                            <h2>PRODUCER</h2>
+                            <p>
+                                <!--<a href="#" data-toggle="modal" data-target="#modal-project-2">LINK HERE</a>-->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-project-16">Read More</button>
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--project-16-->
 
 
 
@@ -1135,6 +1151,43 @@
                     </div>
                 </div>
                 <!--modal-15-->
+                  <!--modal-16-->
+                  <div id="modal-project-16" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content modal-body">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-target=".bs-example-modal-lg">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Other</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row scroll-p">
+                                    <div class="col-lg-6">
+                                        <img src="img/video-small.jpg" alt="PRODUCER">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4>PRODUCER</h4>
+                                        <p>Using the Draw My Life style, I made this video to introduce myself to new friends.</p>
+                                        <a href="https://www.youtube.com/watch?v=xWFgwXPqUzk" target="_blank">
+                                            <button type="button" class="btn btn-outline-info btn-sm read-btn">
+                                                <i class="ion-android-create"></i>Read More</button>
+                                        </a>
+                                       
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--modal-16-->
 
 
 
@@ -1181,10 +1234,12 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
+    
     <script src="js/style.js"></script>
     <script>
 
@@ -1232,8 +1287,16 @@
         });
 
 
+        $(function () {
+            if ($(window).width() < 480) {
+                $('.navbar a').on('click', function () {
+                    $('.navbar-toggle').click();
+                });
+            }
+        });
 
     </script>
+
 
 
 </body>
